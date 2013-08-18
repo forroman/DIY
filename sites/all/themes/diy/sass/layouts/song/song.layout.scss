@@ -1,0 +1,31 @@
+/*******************************************************************************
+ * _layout.scss
+ *
+ * Styling of the "song" layout demonstrating the Compass grid extension Susy
+ * and building mobile first layouts.
+ ******************************************************************************/
+
+@import "compass";
+
+// Import the "Susy" grid system (http://susy.oddbird.net/).
+@import "susy";
+
+// Import the "rgbapng" library.
+@import "rgbapng";
+
+// Import all the utility mixins.
+@import "omega/utility";
+
+// Import our layout specific variables.
+@import "partials/_variables";
+
+// Import the layout.
+@import "partials/_layout";
+
+// Import the layout.
+@import "partials/_widgets";
+
+//Import the styles.
+@import "partials/_styles";
+
+

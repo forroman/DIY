@@ -1,0 +1,41 @@
+@include at-media-query($media-narrow-up) {
+  // The first sidebar is active.
+  .sidebar-first {
+    .sidebar-first-container {
+      @include span-columns(8,24);
+    }
+
+    .main-content {
+      @include span-columns(16 omega,24);
+    }
+  }
+
+  // The second sidebar is active.
+  .sidebar-second {
+    .sidebar-second-container {
+      @include span-columns(8 omega,24);
+    }
+
+    .main-content {
+      @include span-columns(16,24);
+    }
+  }
+
+  // Both sidebars are active.
+  .two-sidebars {
+    .main-content {
+      @include span-columns(12,24);
+      @include prefix(6,24);
+    }
+
+    .sidebar-second-container {
+      @include span-columns(6 omega,24);
+    }
+
+    .sidebar-first-container {
+      @include span-columns(6,24);
+      @include pull(18,24);
+    }
+  }
+}
+

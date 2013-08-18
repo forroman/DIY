@@ -1,0 +1,711 @@
+/*******************************************************************************
+ * _layout.scss
+ *
+ * Styling of the "song" layout demonstrating the Compass grid extension Susy
+ * and building mobile first layouts.
+ ******************************************************************************/
+/**
+ * Hide elements visually, but keep them available for screen-readers.
+ *
+ * Used for information required for screen-reader users to understand and use
+ * the site where visual display is undesirable. Information provided in this
+ * manner should be kept concise, to avoid unnecessary burden on the user.
+ * "!important" is used to prevent unintentional overrides.
+ *
+ * The .element-focusable class extends the .element-invisible class to allow
+ * the element to be focusable when navigated to via the keyboard.
+ */
+/* Begin styles variables */
+/* Dark grey. */
+/* White. */
+/* Very light grey. */
+/* Light grey */
+/* Red */
+/* Light red */
+/* Yellow green */
+/* Orange */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_base\.scss}line{font-family:\000031}}
+body {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_base\.scss}line{font-family:\000036}}
+.page {
+  min-width: 320px;
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_base\.scss}line{font-family:\0000312}}
+.main-content {
+  min-height: 1px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_base\.scss}line{font-family:\0000318}}
+.main, .topbar, .l-region--navigation, .footer-container .l-region, .l-region--search, .l-region--banner {
+  *zoom: 1;
+  max-width: 59em;
+  _width: 59em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/RailsInstaller\/Ruby1\.9\.3\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-0\.12\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+.main:after, .topbar:after, .l-region--navigation:after, .footer-container .l-region:after, .l-region--search:after, .l-region--banner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_base\.scss}line{font-family:\0000323}}
+.main-content {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+@media all and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_base\.scss}line{font-family:\0000329}}
+  .sidebar-first-container, .sidebar-second-container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_base\.scss}line{font-family:\0000335}}
+.l-region--postscript, .l-region--preface, .footer-container .l-region, .l-region--content {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_blocks\.scss}line{font-family:\000031}}
+.block {
+  margin-bottom: 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_blocks\.scss}line{font-family:\000034}}
+.l-region--banner .block, .l-region--navigation .block, .l-region--search .block {
+  margin-bottom: 0;
+}
+
+@media all and (min-width: 480px) and (max-width: 799px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_blocks\.scss}line{font-family:\0000311}}
+  .l-region--postscript .block, .l-region--preface .block, .l-region--footer .block {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000321}}
+  .l-region--postscript .block:nth-child(2n), .l-region--preface .block:nth-child(2n), .l-region--footer .block:nth-child(2n) {
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000326}}
+  .l-region--postscript .block:first-child, .l-region--postscript .block:nth-child(2n+3), .l-region--preface .block:first-child, .l-region--preface .block:nth-child(2n+3), .l-region--footer .block:first-child, .l-region--footer .block:nth-child(2n+3) {
+    clear: both;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_blocks\.scss}line{font-family:\0000318}}
+  .sidebar-first .l-region--postscript .block, .sidebar-first .l-region--preface .block, .sidebar-second .l-region--postscript .block, .sidebar-second .l-region--preface .block {
+    float: none;
+    width: auto;
+    margin-right: auto;
+    *margin-left: auto;
+    display: block;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000335}}
+  .sidebar-first .l-region--postscript .block:nth-child(1n), .sidebar-first .l-region--preface .block:nth-child(1n), .sidebar-second .l-region--postscript .block:nth-child(1n), .sidebar-second .l-region--preface .block:nth-child(1n) {
+    float: left;
+    margin-right: 1.69492%;
+    *margin-left: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000340}}
+  .sidebar-first .l-region--postscript .block:nth-child(1n), .sidebar-first .l-region--preface .block:nth-child(1n), .sidebar-second .l-region--postscript .block:nth-child(1n), .sidebar-second .l-region--preface .block:nth-child(1n) {
+    clear: none;
+  }
+}
+@media all and (min-width: 800px) and (max-width: 979px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_blocks\.scss}line{font-family:\0000327}}
+  .l-region--postscript .block, .l-region--preface .block, .l-region--footer .block {
+    float: none;
+    width: auto;
+    margin-right: auto;
+    *margin-left: auto;
+    display: block;
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000335}}
+  .l-region--postscript .block:nth-child(1n), .l-region--preface .block:nth-child(1n), .l-region--footer .block:nth-child(1n) {
+    float: left;
+    margin-right: 1.69492%;
+    *margin-left: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000340}}
+  .l-region--postscript .block:nth-child(1n), .l-region--preface .block:nth-child(1n), .l-region--footer .block:nth-child(1n) {
+    clear: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000321}}
+  .l-region--postscript .block:nth-child(3n), .l-region--preface .block:nth-child(3n), .l-region--footer .block:nth-child(3n) {
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000326}}
+  .l-region--postscript .block:first-child, .l-region--postscript .block:nth-child(3n+4), .l-region--preface .block:first-child, .l-region--preface .block:nth-child(3n+4), .l-region--footer .block:first-child, .l-region--footer .block:nth-child(3n+4) {
+    clear: both;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_blocks\.scss}line{font-family:\0000335}}
+  .sidebar-first .l-region--postscript .block, .sidebar-first .l-region--preface .block, .sidebar-second .l-region--postscript .block, .sidebar-second .l-region--preface .block {
+    float: none;
+    width: auto;
+    margin-right: auto;
+    *margin-left: auto;
+    display: block;
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000335}}
+  .sidebar-first .l-region--postscript .block:nth-child(1n), .sidebar-first .l-region--preface .block:nth-child(1n), .sidebar-second .l-region--postscript .block:nth-child(1n), .sidebar-second .l-region--preface .block:nth-child(1n) {
+    float: left;
+    margin-right: 1.69492%;
+    *margin-left: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000340}}
+  .sidebar-first .l-region--postscript .block:nth-child(1n), .sidebar-first .l-region--preface .block:nth-child(1n), .sidebar-second .l-region--postscript .block:nth-child(1n), .sidebar-second .l-region--preface .block:nth-child(1n) {
+    clear: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000321}}
+  .sidebar-first .l-region--postscript .block:nth-child(2n), .sidebar-first .l-region--preface .block:nth-child(2n), .sidebar-second .l-region--postscript .block:nth-child(2n), .sidebar-second .l-region--preface .block:nth-child(2n) {
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000326}}
+  .sidebar-first .l-region--postscript .block:first-child, .sidebar-first .l-region--postscript .block:nth-child(2n+3), .sidebar-first .l-region--preface .block:first-child, .sidebar-first .l-region--preface .block:nth-child(2n+3), .sidebar-second .l-region--postscript .block:first-child, .sidebar-second .l-region--postscript .block:nth-child(2n+3), .sidebar-second .l-region--preface .block:first-child, .sidebar-second .l-region--preface .block:nth-child(2n+3) {
+    clear: both;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_blocks\.scss}line{font-family:\0000344}}
+  .two-sidebars .l-region--postscript .block, .two-sidebars .l-region--preface .block {
+    float: none;
+    width: auto;
+    margin-right: auto;
+    *margin-left: auto;
+    display: block;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000335}}
+  .two-sidebars .l-region--postscript .block:nth-child(1n), .two-sidebars .l-region--preface .block:nth-child(1n) {
+    float: left;
+    margin-right: 1.69492%;
+    *margin-left: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000340}}
+  .two-sidebars .l-region--postscript .block:nth-child(1n), .two-sidebars .l-region--preface .block:nth-child(1n) {
+    clear: none;
+  }
+}
+@media all and (min-width: 980px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_blocks\.scss}line{font-family:\0000353}}
+  .l-region--postscript .block, .l-region--preface .block, .l-region--footer .block {
+    float: none;
+    width: auto;
+    margin-right: auto;
+    *margin-left: auto;
+    display: block;
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000335}}
+  .l-region--postscript .block:nth-child(1n), .l-region--preface .block:nth-child(1n), .l-region--footer .block:nth-child(1n) {
+    float: left;
+    margin-right: 1.69492%;
+    *margin-left: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000340}}
+  .l-region--postscript .block:nth-child(1n), .l-region--preface .block:nth-child(1n), .l-region--footer .block:nth-child(1n) {
+    clear: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000321}}
+  .l-region--postscript .block:nth-child(4n), .l-region--preface .block:nth-child(4n), .l-region--footer .block:nth-child(4n) {
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000326}}
+  .l-region--postscript .block:first-child, .l-region--postscript .block:nth-child(4n+5), .l-region--preface .block:first-child, .l-region--preface .block:nth-child(4n+5), .l-region--footer .block:first-child, .l-region--footer .block:nth-child(4n+5) {
+    clear: both;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_blocks\.scss}line{font-family:\0000361}}
+  .sidebar-first .l-region--postscript .block, .sidebar-first .l-region--preface .block, .sidebar-second .l-region--postscript .block, .sidebar-second .l-region--preface .block {
+    float: none;
+    width: auto;
+    margin-right: auto;
+    *margin-left: auto;
+    display: block;
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000335}}
+  .sidebar-first .l-region--postscript .block:nth-child(1n), .sidebar-first .l-region--preface .block:nth-child(1n), .sidebar-second .l-region--postscript .block:nth-child(1n), .sidebar-second .l-region--preface .block:nth-child(1n) {
+    float: left;
+    margin-right: 1.69492%;
+    *margin-left: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000340}}
+  .sidebar-first .l-region--postscript .block:nth-child(1n), .sidebar-first .l-region--preface .block:nth-child(1n), .sidebar-second .l-region--postscript .block:nth-child(1n), .sidebar-second .l-region--preface .block:nth-child(1n) {
+    clear: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000321}}
+  .sidebar-first .l-region--postscript .block:nth-child(3n), .sidebar-first .l-region--preface .block:nth-child(3n), .sidebar-second .l-region--postscript .block:nth-child(3n), .sidebar-second .l-region--preface .block:nth-child(3n) {
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000326}}
+  .sidebar-first .l-region--postscript .block:first-child, .sidebar-first .l-region--postscript .block:nth-child(3n+4), .sidebar-first .l-region--preface .block:first-child, .sidebar-first .l-region--preface .block:nth-child(3n+4), .sidebar-second .l-region--postscript .block:first-child, .sidebar-second .l-region--postscript .block:nth-child(3n+4), .sidebar-second .l-region--preface .block:first-child, .sidebar-second .l-region--preface .block:nth-child(3n+4) {
+    clear: both;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_blocks\.scss}line{font-family:\0000370}}
+  .two-sidebars .l-region--postscript .block, .two-sidebars .l-region--preface .block {
+    float: none;
+    width: auto;
+    margin-right: auto;
+    *margin-left: auto;
+    display: block;
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000335}}
+  .two-sidebars .l-region--postscript .block:nth-child(1n), .two-sidebars .l-region--preface .block:nth-child(1n) {
+    float: left;
+    margin-right: 1.69492%;
+    *margin-left: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000340}}
+  .two-sidebars .l-region--postscript .block:nth-child(1n), .two-sidebars .l-region--preface .block:nth-child(1n) {
+    clear: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000321}}
+  .two-sidebars .l-region--postscript .block:nth-child(2n), .two-sidebars .l-region--preface .block:nth-child(2n) {
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/omega\/utility\/_grid\.scss}line{font-family:\0000326}}
+  .two-sidebars .l-region--postscript .block:first-child, .two-sidebars .l-region--postscript .block:nth-child(2n+3), .two-sidebars .l-region--preface .block:first-child, .two-sidebars .l-region--preface .block:nth-child(2n+3) {
+    clear: both;
+  }
+}
+@media all and (min-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_blocks\.scss}line{font-family:\0000379}}
+  .front .l-region--content .block {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_blocks\.scss}line{font-family:\0000382}}
+  .front .l-region--content .block:first-child, .front .l-region--content .block:nth-child(4) {
+    width: 201.69492%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+    clear: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_blocks\.scss}line{font-family:\0000389}}
+  .front .l-region--content .block:nth-child(3) {
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+}
+@media all and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_blocks\.scss}line{font-family:\0000396}}
+  .front .l-region--content .block {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_blocks\.scss}line{font-family:\0000399}}
+  .front .l-region--content .block:first-child, .front .l-region--content .block:nth-child(4) {
+    width: 100%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+    clear: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_blocks\.scss}line{font-family:\00003106}}
+  .front .l-region--content .block:nth-child(3) {
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_header\.scss}line{font-family:\000032}}
+.page {
+  padding-top: 50px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_header\.scss}line{font-family:\000036}}
+.topbar {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 150;
+  background-color: #af0136;
+}
+
+@media all and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_header\.scss}line{font-family:\0000317}}
+  .page {
+    padding-top: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_header\.scss}line{font-family:\0000321}}
+  .topbar {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: auto;
+    margin-top: 0;
+    position: static;
+    border-bottom: none;
+    background-color: transparent;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_banner\.scss}line{font-family:\000032}}
+.banner-container {
+  display: none;
+}
+
+@media all and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_banner\.scss}line{font-family:\000038}}
+  .banner-container {
+    display: block;
+  }
+}
+@media all and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_sidebars\.scss}line{font-family:\000034}}
+  .sidebar-first .sidebar-first-container {
+    width: 32.77311%;
+    float: left;
+    margin-right: 0.84034%;
+    display: inline;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_sidebars\.scss}line{font-family:\000038}}
+  .sidebar-first .main-content {
+    width: 66.38655%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_sidebars\.scss}line{font-family:\0000315}}
+  .sidebar-second .sidebar-second-container {
+    width: 32.77311%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_sidebars\.scss}line{font-family:\0000319}}
+  .sidebar-second .main-content {
+    width: 66.38655%;
+    float: left;
+    margin-right: 0.84034%;
+    display: inline;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_sidebars\.scss}line{font-family:\0000326}}
+  .two-sidebars .main-content {
+    width: 49.57983%;
+    float: left;
+    margin-right: 0.84034%;
+    display: inline;
+    padding-left: 25.21008%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_sidebars\.scss}line{font-family:\0000331}}
+  .two-sidebars .sidebar-second-container {
+    width: 24.36975%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/layout\/_sidebars\.scss}line{font-family:\0000335}}
+  .two-sidebars .sidebar-first-container {
+    width: 24.36975%;
+    float: left;
+    margin-right: 0.84034%;
+    display: inline;
+    margin-left: -75.63025%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_sidebar\.scss}line{font-family:\000033}}
+.main {
+  position: relative;
+  overflow: hidden;
+}
+
+@media all and (max-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_sidebar\.scss}line{font-family:\0000310}}
+  .sidebar-first-toggle {
+    background-color: #141413;
+    width: 30px;
+    height: 40px;
+    display: block;
+    position: relative;
+    right: -40px;
+    float: right;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_sidebar\.scss}line{font-family:\0000319}}
+  .show-sidebar .sidebar-first-toggle {
+    right: -50px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_sidebar\.scss}line{font-family:\0000325}}
+  html.js .sidebar-first .main, html.js .two-sidebars .main {
+    padding-left: 20px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_sidebar\.scss}line{font-family:\0000329}}
+  html.js .sidebar-first-container {
+    -webkit-transition: left 0.4s ease-in-out;
+    -moz-transition: left 0.4s ease-in-out;
+    -o-transition: left 0.4s ease-in-out;
+    transition: left 0.4s ease-in-out;
+    background-color: #2e2e2c;
+    float: left;
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    border-right: 10px solid #141413;
+    z-index: 100;
+    height: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_sidebar\.scss}line{font-family:\0000342}}
+  html.js .sidebar-first-container .block {
+    -webkit-transition: opacity 0.4s linear;
+    -moz-transition: opacity 0.4s linear;
+    -o-transition: opacity 0.4s linear;
+    transition: opacity 0.4s linear;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_sidebar\.scss}line{font-family:\0000349}}
+  html.js .show-sidebar .main {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    _width: auto;
+    max-width: none;
+    padding-right: 40px;
+    cursor: pointer;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_sidebar\.scss}line{font-family:\0000354}}
+  html.js .show-sidebar .main > *:not(.sidebar-first-container) {
+    display: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_sidebar\.scss}line{font-family:\0000359}}
+  html.js .show-sidebar .sidebar-first-container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em;
+    cursor: default;
+    position: relative;
+    left: 0;
+    height: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_sidebar\.scss}line{font-family:\0000368}}
+  html.js .show-sidebar .sidebar-first-container .block {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_sidebar\.scss}line{font-family:\0000377}}
+  .sidebar-first-container {
+    left: -100%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_toolbar\.scss}line{font-family:\000031}}
+.navigation-container {
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_toolbar\.scss}line{font-family:\000036}}
+.l-region--navigation .block {
+  display: none;
+  float: left;
+  width: 100%;
+  margin-bottom: .5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_toolbar\.scss}line{font-family:\0000312}}
+.l-region--navigation .block.block-toggled {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_toolbar\.scss}line{font-family:\0000318}}
+.block-toggle {
+  display: block;
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin: 5px 0 5px 5px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 60%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_toolbar\.scss}line{font-family:\0000328}}
+.block-toggle:hover, .block-toggle:focus, .block-toggle:active {
+  background-color: black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_toolbar\.scss}line{font-family:\0000333}}
+.block-toggle {
+  background-image: url("/images/menu-toggle.png");
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_toolbar\.scss}line{font-family:\0000339}}
+.l-region--navigation ul.menu li {
+  margin: .3em 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_toolbar\.scss}line{font-family:\0000343}}
+.l-region--navigation ul.menu a {
+  background-color: #141413;
+  display: block;
+  color: #af0136;
+  padding: 0.4em;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_toolbar\.scss}line{font-family:\0000350}}
+.l-region--navigation ul.menu a:hover, .l-region--navigation ul.menu a:focus, .l-region--navigation ul.menu a:active {
+  background-color: #f6840b;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_toolbar\.scss}line{font-family:\0000355}}
+.l-region--navigation ul.menu ul.menu li a {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media all and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_toolbar\.scss}line{font-family:\0000363}}
+  .navigation-container {
+    overflow: visible;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_toolbar\.scss}line{font-family:\0000368}}
+  .l-region--navigation .block {
+    float: none;
+    width: auto;
+    display: block;
+    margin-bottom: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_toolbar\.scss}line{font-family:\0000376}}
+  .l-region--navigation ul.menu li {
+    float: left;
+    margin: 0;
+    white-space: nowrap;
+    list-style: none;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_toolbar\.scss}line{font-family:\0000383}}
+  .l-region--navigation ul.menu a {
+    background-color: transparent;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/widgets\/_toolbar\.scss}line{font-family:\0000389}}
+  .block-toggle {
+    display: none;
+  }
+}
+/* Hide the name and slogan */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/styles\/_branding\.scss}line{font-family:\000037}}
+.name-and-slogan {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/styles\/_branding\.scss}line{font-family:\0000311}}
+.name-and-slogan h1 {
+  margin: 0.5em 0 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/styles\/_branding\.scss}line{font-family:\0000314}}
+.name-and-slogan a {
+  color: #2e2e2c;
+  font-family: Tahoma, Geneva, sans-serif, "Microsoft Yahei";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/styles\/_branding\.scss}line{font-family:\0000317}}
+.name-and-slogan a, .name-and-slogan a:hover, .name-and-slogan a:focus, .name-and-slogan a:active {
+  color: #2e2e2c;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/styles\/_branding\.scss}line{font-family:\0000323}}
+.logo {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  float: left;
+  display: block;
+  background: url("images/logo-mobile.png") no-repeat 50% 50%;
+  height: 50px;
+  width: 40px;
+  margin-right: 30px;
+}
+
+@media all and (min-width: 800px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/styles\/_branding\.scss}line{font-family:\0000334}}
+  .logo {
+    background: url("images/logo.png") no-repeat 50% 50%;
+    height: 50px;
+    width: 85px;
+    margin: 12px 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/styles\/_branding\.scss}line{font-family:\0000341}}
+  .name-and-slogan {
+    position: static !important;
+    clip: auto;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/DIY\/sites\/all\/themes\/diy\/sass\/layouts\/song\/partials\/styles\/_navigation\.scss}line{font-family:\000031}}
+.navigation-container {
+  font-family: Tahoma, Geneva, sans-serif, "Microsoft Yahei";
+  background-color: #efefef;
+  font-size: 1em;
+  border-bottom: 5px solid #af0136;
+}
